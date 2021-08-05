@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="logo" src="./images/logo.svg" alt="logo" />
+      <div class="calculator">
+        <div class="calculator__count">
+          <div class="bill">
+            <span>Bill</span>
+            <input
+              class="bill-input"
+              type="number"
+              placeholder="0"
+              onchange="calculateTip()"
+            />
+          </div>
+          <div class="tip-percent">
+            <span>Select Tip %</span>
+            <div class="tip-percent__amount">
+              <label class="amount-container">
+                <input
+                  class="input"
+                  id="5"
+                  name="check"
+                  onclick="onlyOne(this)"
+                  onkeydown="onlyOne(this, event)"
+                  onchange="calculateTip()"
+                  type="checkbox"
+                />
+                <span for="5" class="checkmark">5%</span>
+              </label>
+              <label class="amount-container">
+                <input
+                  class="input"
+                  name="check"
+                  onclick="onlyOne(this)"
+                  onkeydown="onlyOne(this, event)"
+                  onchange="calculateTip()"
+                  type="checkbox"
+                />
+                <span class="checkmark">10%</span>
+              </label>
+              <label class="amount-container">
+                <input
+                  class="input"
+                  name="check"
+                  onclick="onlyOne(this)"
+                  onkeydown="onlyOne(this, event)"
+                  onchange="calculateTip()"
+                  type="checkbox"
+                />
+                <span class="checkmark">15%</span>
+              </label>
+              <label class="amount-container">
+                <input
+                  class="input"
+                  name="check"
+                  onclick="onlyOne(this)"
+                  onkeydown="onlyOne(this, event)"
+                  onchange="calculateTip()"
+                  type="checkbox"
+                />
+                <span class="checkmark">25%</span>
+              </label>
+              <label class="amount-container">
+                <input
+                  class="input"
+                  name="check"
+                  onclick="onlyOne(this)"
+                  onkeydown="onlyOne(this, event)"
+                  onchange="calculateTip()"
+                  type="checkbox"
+                />
+                <span class="checkmark">50%</span>
+              </label>
+              <label class="amount-container">
+                <input
+                  type="number"
+                  class="custom"
+                  placeholder="Custom"
+                  onkeydown="onlyOne(this, event)"
+                  onchange="calculateTip()"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="people">
+            <div class="spans">
+              <span>Number of People</span>
+              <span class="error">Can't be zero</span>
+            </div>
+
+            <input
+              type="number"
+              class="number-of-people"
+              onblur="notZero()"
+              placeholder="0"
+              onchange="calculateTip()"
+            />
+          </div>
+        </div>
+        <div class="calculator__result">
+          <div class="tip">
+            <div class="tip__text">
+              <span>Tip amount</span>
+              <span class="tip__person">/ person</span>
+            </div>
+            <span class="tip__result tip__amount">$0.00</span>
+          </div>
+          <div class="tip">
+            <div class="tip__text">
+              <span>Total</span>
+              <span class="tip__person">/ person</span>
+            </div>
+            <span class="tip__result tip__total">$0.00</span>
+          </div>
+
+          <input
+            type="submit"
+            disabled
+            value="Reset"
+            class="submit"
+            onclick="reset()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
