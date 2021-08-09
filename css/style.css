@@ -139,6 +139,14 @@ body {
   background-color: #f4fafa;
   margin-top: 6px;
   margin-bottom: 35px;
+  -moz-appearance: textfield;
+}
+
+.calculator .bill input::-webkit-outer-spin-button, .calculator .bill input::-webkit-inner-spin-button,
+.calculator .people input::-webkit-outer-spin-button,
+.calculator .people input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
 }
 
 @media (min-width: 920px) {

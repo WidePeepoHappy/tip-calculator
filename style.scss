@@ -110,12 +110,12 @@ body {
       margin-top: 6px;
       margin-bottom: 35px;
 
-      // &::-webkit-outer-spin-button,
-      // &::-webkit-inner-spin-button {
-      //   margin: 0;
-      //   -webkit-appearance: none;
-      // }
-      // -moz-appearance: textfield;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        margin: 0;
+        -webkit-appearance: none;
+      }
+      -moz-appearance: textfield;
 
       @media (min-width: 920px) {
         width: 379px;
