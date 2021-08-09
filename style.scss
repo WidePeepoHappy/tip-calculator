@@ -68,13 +68,17 @@ body {
   }
 
   @media (max-width: 320px) {
-    padding: 35px 5.5px 32px;
+    padding: 35px 10px 32px;
   }
 
   &__count {
     @media (min-width: 920px) {
       width: 379px;
       margin: 48px;
+    }
+
+    @media (max-width: 320px) {
+      width: 301px;
     }
 
     span {
@@ -104,21 +108,28 @@ body {
       background-size: initial;
       background-color: hsl(189, 41%, 97%);
       margin-top: 6px;
+      margin-bottom: 35px;
 
-      &::-webkit-outer-spin-button,
-      &::-webkit-inner-spin-button {
-        margin: 0;
-        -webkit-appearance: none;
-      }
-      -moz-appearance: textfield;
+      // &::-webkit-outer-spin-button,
+      // &::-webkit-inner-spin-button {
+      //   margin: 0;
+      //   -webkit-appearance: none;
+      // }
+      // -moz-appearance: textfield;
 
       @media (min-width: 920px) {
         width: 379px;
       }
 
+      @media (max-width: 320px) {
+        width: 301px;
+      }
+
       &:focus,
       &:hover {
         border: 2px solid hsl(172, 67%, 45%);
+        padding: 13px 16px;
+        background-position: left 16px top 13px;
       }
 
       &::placeholder {
@@ -131,13 +142,11 @@ body {
   .bill {
     input {
       background-image: url(../images/icon-dollar.svg);
-      margin-bottom: 35px;
     }
   }
   .people {
     input {
       background-image: url(../images/icon-person.svg);
-      margin-bottom: 35px;
 
       @media (min-width: 920px) {
         margin-bottom: 0;
@@ -276,7 +285,7 @@ body {
     }
 
     @media (max-width: 320px) {
-      width: 310px;
+      width: 301px;
     }
 
     .tip {

@@ -97,7 +97,7 @@ body {
 
 @media (max-width: 320px) {
   .calculator {
-    padding: 35px 5.5px 32px;
+    padding: 35px 10px 32px;
   }
 }
 
@@ -105,6 +105,12 @@ body {
   .calculator__count {
     width: 379px;
     margin: 48px;
+  }
+}
+
+@media (max-width: 320px) {
+  .calculator__count {
+    width: 301px;
   }
 }
 
@@ -132,14 +138,7 @@ body {
   background-size: initial;
   background-color: #f4fafa;
   margin-top: 6px;
-  -moz-appearance: textfield;
-}
-
-.calculator .bill input::-webkit-outer-spin-button, .calculator .bill input::-webkit-inner-spin-button,
-.calculator .people input::-webkit-outer-spin-button,
-.calculator .people input::-webkit-inner-spin-button {
-  margin: 0;
-  -webkit-appearance: none;
+  margin-bottom: 35px;
 }
 
 @media (min-width: 920px) {
@@ -149,10 +148,19 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .calculator .bill input,
+  .calculator .people input {
+    width: 301px;
+  }
+}
+
 .calculator .bill input:focus, .calculator .bill input:hover,
 .calculator .people input:focus,
 .calculator .people input:hover {
   border: 2px solid #26c0ab;
+  padding: 13px 16px;
+  background-position: left 16px top 13px;
 }
 
 .calculator .bill input::-webkit-input-placeholder,
@@ -181,12 +189,10 @@ body {
 
 .calculator .bill input {
   background-image: url(../images/icon-dollar.svg);
-  margin-bottom: 35px;
 }
 
 .calculator .people input {
   background-image: url(../images/icon-person.svg);
-  margin-bottom: 35px;
 }
 
 @media (min-width: 920px) {
@@ -360,7 +366,7 @@ body {
 
 @media (max-width: 320px) {
   .calculator__result {
-    width: 310px;
+    width: 301px;
   }
 }
 
