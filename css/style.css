@@ -163,14 +163,6 @@ body {
   }
 }
 
-.calculator .bill input:focus, .calculator .bill input:hover,
-.calculator .people input:focus,
-.calculator .people input:hover {
-  border: 2px solid #26c0ab;
-  padding: 13px 16px;
-  background-position: left 16px top 13px;
-}
-
 .calculator .bill input::-webkit-input-placeholder,
 .calculator .people input::-webkit-input-placeholder {
   text-align: end;
@@ -197,10 +189,6 @@ body {
 
 .calculator .bill input {
   background-image: url(../images/icon-dollar.svg);
-}
-
-.calculator .people input {
-  background-image: url(../images/icon-person.svg);
 }
 
 @media (min-width: 920px) {
