@@ -119,13 +119,6 @@ body {
         width: 301px;
       }
 
-      &:focus,
-      &:hover {
-        border: 2px solid hsl(172, 67%, 45%);
-        padding: 13px 16px;
-        background-position: left 16px top 13px;
-      }
-
       &::placeholder {
         text-align: end;
         color: hsl(184, 14%, 56%);
@@ -136,11 +129,24 @@ body {
   .bill {
     input {
       background-image: url(../images/icon-dollar.svg);
+      &:focus,
+      &:hover {
+        border: 2px solid hsl(172, 67%, 45%);
+        padding: 13px 16px;
+        background-position: left 16px top 13px;
+      }
     }
   }
+
   .people {
     input {
       background-image: url(../images/icon-person.svg);
+      &:focus,
+      &:hover {
+        border: 2px solid hsl(172, 67%, 45%);
+        padding: 13px 16px;
+        background-position: left 16px top 13px;
+      }
 
       @media (min-width: 920px) {
         margin-bottom: 0;
